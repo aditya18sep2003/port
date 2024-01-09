@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfoilo website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="team.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <img src="download.webp" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#teams">Teams</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class='bx bx-x' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu' onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Aakash Gupta</span>
+                    <br>From Bangalore</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aakash.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi asperiores deserunt doloremque sapiente culpa a, facere tempore? Enim optio odio vero ut obcaecati molestiae saepe eos fugit ipsum sed pariatur ex, rem eaque odit id laboriosam
+                        itaque magnam nam qui non excepturi temporibus. Necessitatibus dolorem, totam facere eveniet architecto vitae tempora neque. Ab, ipsam.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developer</span><br>Web app Development</li>
+                            <li><span>Java Developer</span><br>Backend Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>UI/UX Design Training at Basent Institute</li>
+                            <li><span>2022 - 2023</span><br>Training at Basent Institute</li>
+                            <li><span>2022 - 2023</span><br>Training at Basent Institute</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>UI/UX Desing Training at Basent Institute</li>
+                            <li><span>2024</span><br>Vtu from Bangalore</li>
+                            <li><span>2019</span><br>Narayana Pu College</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bx-code-alt'></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem excepturi ducimus libero inventore! Perspiciatis placeat ab perferendis quasi accusamus.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bx-code-alt'></i>
+                    <h2>Backend Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem excepturi ducimus libero inventore! Perspiciatis placeat ab perferendis quasi accusamus.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bx-code-alt'></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem excepturi ducimus libero inventore! Perspiciatis placeat ab perferendis quasi accusamus.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ............portfoilo section -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="social.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. download it form play store.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="app.jpeg">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>The app connects you to the talented people around the world. download it form play store.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="online shoping.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. download it form play store.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </div>
+
+    <!-- teams -->
+    <div id="teams">
+        <div class="container">
+            <h1 class="sub-title">Teams</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="aakash.jpg">
+                    <div class="layer">
+                        <h3>Backend Developer</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum recusandae nihil eius.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="umra.jpg">
+                    <div class="layer">
+                        <h3>Frontend Developer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente quidem magni.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="arnab.jpg">
+                    <div class="layer">
+                        <h3>Data Science</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque optio maxime quibusdam.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- contact form -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='email -icon'></i>akgupta7177@gmail.com</p>
+                    <p><i class='phone icon'></i>8294864993</p>
+                    <div class="social-icon">
+                        <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                        <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                        <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                        <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                    <a href="Travel.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name " required>
+                        <input type="email" name="Email" placeholder="Eneter your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @<i class='bx bxl-linkedin-square'></i> syed Maidul Islam</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzxK3Jxb4XNokM460qVCJr_EWIb3upA4Hs1SqzF4FtrwfRV1IBid9deRc7cJQ4av9ob/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
